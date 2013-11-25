@@ -1,15 +1,16 @@
 <head>
-  <title>Microscope</title>
+  <title>Blog Beats</title>
 </head>
 <body>
   <div class="container">
-    <header class="navbar">
-      <div class="navbar-inner">
-        <a class="brand" href="/">Microscope</a>
-      </div>
-    </header>
-    <div id="main" class="row-fluid">
-      {{> postsList}}
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="{{postsListPath}}">Blog Beat</a>
+      <a class="pull-right" href="{{aboutPagePath}}">About</a>
     </div>
+  </header>
+  <div id="main" class="row-fluid">
+    {{renderPage}}
+  </div>
   </div>
 </body>
